@@ -1,0 +1,44 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: ${env:HOST_NAME}:4317
+processors:
+  batch:
+    timeout: 20s
+  attributes/label:
+    actions:
+      - key: service.name
+        value: ${env:SERVICE_NAME}
+        action: insert
+      - key: aws.emf.storage_resolution
+        value: "10"
+        action: insert
+
+exporters:
+  awsemf:
+    region: "eu-central-1"
+    log_group_name: "/metrics/k6/otel"
+    log_stream_name: "k6-collector"
+    namespace: ${env:METRIC_NAMESPACE}
+    dimension_rollup_option: "NoDimensionRollup"
+    metric_declarations:
+      - dimensions: [["service.name"]]
+        metric_name_selectors:
+          - "^vu*"
+          - "^http_req*"
+          - "^Response*"
+          - "^data_*"
+          - "^check*"
+          - "^iteration*"
+          - "^FailedRequests$"
+    resource_to_telemetry_conversion:
+      enabled: false
+    detailed_metrics: true
+    log_retention: 7
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [attributes/label, batch]
+      exporters: [awsemf]

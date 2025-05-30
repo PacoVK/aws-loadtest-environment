@@ -1,0 +1,25 @@
+# Source code
+*.ts
+!*.d.ts
+
+# Test files
+test
+__tests__
+*.test.ts
+*.spec.ts
+
+# Development files
+.git*
+.eslint*
+.prettier*
+tsconfig.json
+jest.config.js
+cdk.json
+.vscode/
+.idea/
+node_modules/
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+bin/
