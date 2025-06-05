@@ -3995,8 +3995,6 @@ __metadata:
     ts-jest: "npm:^29.3.2"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.8.3"
-  bin:
-    loadtest-environment: bin/loadtest-environment.js
   languageName: unknown
   linkType: soft
 
