@@ -2264,8 +2264,8 @@ __metadata:
   linkType: hard
 
 "aws-cdk@npm:^2.1013.0":
-  version: 2.1013.0
-  resolution: "aws-cdk@npm:2.1013.0"
+  version: 2.1018.0
+  resolution: "aws-cdk@npm:2.1018.0"
   dependencies:
     fsevents: "npm:2.3.2"
   dependenciesMeta:
@@ -2273,7 +2273,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 10c0/829e5cf6dd5c66bb32cad764a5d99266a90151167f8babd843641340a544953f01f69f4993df92700610aaae5caebc6060f3cc46ec65e761edfc0ec9e7f6c169
+  checksum: 10c0/ba7cf6f8477e835723a0061baaec0df13c3a4844450652caf3a72e3ef11478029db5e1626f042e24a905ff81c61aa8794b15bfbde3d31d2e19adb78408def55f
   languageName: node
   linkType: hard
 
@@ -3995,8 +3995,6 @@ __metadata:
     ts-jest: "npm:^29.3.2"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.8.3"
-  bin:
-    loadtest-environment: bin/loadtest-environment.js
   languageName: unknown
   linkType: soft
 
