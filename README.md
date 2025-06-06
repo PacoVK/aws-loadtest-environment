@@ -49,9 +49,11 @@ The solution consists of several key components:
    npm install @pacovk/k6-executor-cluster
    ```
 
-   ```bash
-   yarn install @pacovk/k6-executor-cluster
-   ```
+or when using `yarn`
+
+```bash
+yarn install @pacovk/k6-executor-cluster
+```
 
 2. **Configure your load test**
 
@@ -214,20 +216,6 @@ The load test execution follows this workflow:
 
 - Use ARM-based instances for performance and cost efficiency
 - Set realistic timeouts to prevent runaway executions
-
-## 📝 Scripts
-
-Available npm/yarn scripts:
-
-```bash
-yarn build          # Compile TypeScript
-yarn watch          # Watch mode compilation
-yarn test           # Run Jest tests
-yarn cdk            # CDK CLI commands
-yarn bootstrap     # Bootstrap CDK
-yarn loadtest      # Deploy load test stack
-yarn destroy       # Destroy all resources
-```
 
 ## 🤝 Contributing
 
