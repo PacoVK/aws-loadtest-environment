@@ -45,9 +45,9 @@ The solution consists of several key components:
 
 1. **Add dependency**:
 
-   ```bash
-   npm install @pacovk/k6-executor-cluster
-   ```
+```bash
+npm install @pacovk/k6-executor-cluster
+```
 
 or when using `yarn`
 
