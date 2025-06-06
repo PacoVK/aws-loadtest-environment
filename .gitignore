@@ -14,3 +14,6 @@ cdk.out
 
 .DS_Store
 cdk.context.json
+
+*.tgz
+coverage/

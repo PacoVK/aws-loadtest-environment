@@ -1,25 +1,55 @@
-# Source code
-*.ts
-!*.d.ts
+# Source TypeScript files (keep only compiled .js and .d.ts files)
+lib/**/*.ts
+!lib/**/*.d.ts
 
-# Test files
-test
-__tests__
-*.test.ts
-*.spec.ts
-
-# Development files
-.git*
-.eslint*
-.prettier*
-tsconfig.json
-jest.config.js
-cdk.json
-.vscode/
-.idea/
-node_modules/
+# Entry point source files
+bin/
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
-bin/
+
+# Tests
+test/
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Configuration files
+.eslintrc.js
+.eslintignore
+.prettierrc
+.prettierignore
+jest.config.js
+tsconfig.json
+cdk.json
+cdk.context.json
+*.tsbuildinfo
+renovate.json
+
+# Git files
+.git/
+.github/
+.gitignore
+
+# Documentation
+docs/
+*.md
+!README.md
+!LICENSE.md
+
+# Development files
+node_modules/
+coverage/
+.vscode/
+.idea/
+*.log
+.yarn/
+.pnp.*
+yarn.lock
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db

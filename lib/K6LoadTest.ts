@@ -1,10 +1,5 @@
-import { Construct } from "constructs";
-import { CfnOutput, Stack, StackProps } from "aws-cdk-lib";
-import { LoadTestInfrastructure } from "./core/LoadTestInfrastructure";
-import { K6Container } from "./core/K6Container";
-import { Trigger } from "aws-cdk-lib/triggers";
-import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
-import { Executor } from "./core/Executor";
+import { CfnOutput } from "aws-cdk-lib";
+import { Effect, PolicyStatement } from "aws-cdk-lib/aws-iam";
 import {
   ApplicationLogLevel,
   Architecture,
@@ -12,32 +7,38 @@ import {
   Runtime,
   SystemLogLevel,
 } from "aws-cdk-lib/aws-lambda";
-import { Effect, PolicyStatement } from "aws-cdk-lib/aws-iam";
-import { InfrastructureConfig, LoadTestConfig } from "./types";
+import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
+import { Trigger } from "aws-cdk-lib/triggers";
+import { Construct } from "constructs";
 import { LoadTestDashboard } from "./core/Dashboard";
+import { Executor } from "./core/Executor";
+import { K6Container } from "./core/K6Container";
+import { LoadTestInfrastructure } from "./core/LoadTestInfrastructure";
+import { InfrastructureConfig, LoadTestConfig } from "./types";
+import path from "path";
 
-interface K6LoadTestProps extends StackProps {
+interface K6LoadTestProps {
   infrastructureConfig: InfrastructureConfig;
   loadTestConfig: LoadTestConfig;
 }
 
-export class K6LoadTest extends Stack {
+export class K6LoadTest extends Construct {
   constructor(scope: Construct, id: string, props: K6LoadTestProps) {
-    super(scope, id, props);
+    super(scope, id);
     const { infrastructureConfig, loadTestConfig } = props;
     const loadTestInfrastructure = new LoadTestInfrastructure(
-      this,
+      scope,
       "LoadTestInfrastructure",
       infrastructureConfig,
     );
-    const k6Container = new K6Container(this, "K6Container", {
+    const k6Container = new K6Container(scope, "K6Container", {
       ...loadTestConfig,
       otelVersion: infrastructureConfig.otelVersion,
       memoryReservationMiB: infrastructureConfig.memoryReservationMiB,
       vpc: infrastructureConfig.vpc,
     });
 
-    const loadTestExecutor = new Executor(this, "LoadTestExecutor", {
+    const loadTestExecutor = new Executor(scope, "LoadTestExecutor", {
       cluster: loadTestInfrastructure.cluster,
       asg: loadTestInfrastructure.asg,
       taskDefinition: k6Container.taskDefinition,
@@ -46,11 +47,11 @@ export class K6LoadTest extends Stack {
       assignPublicIp: !infrastructureConfig.vpc,
     });
 
-    new LoadTestDashboard(this, "LoadTestDashboard", {
+    new LoadTestDashboard(scope, "LoadTestDashboard", {
       serviceName: loadTestConfig.serviceName,
     });
 
-    this.triggerLoadTest(loadTestExecutor.stateMachine.stateMachineArn, [
+    this.triggerLoadTest(scope, loadTestExecutor.stateMachine.stateMachineArn, [
       loadTestExecutor,
     ]);
 
@@ -61,11 +62,15 @@ export class K6LoadTest extends Stack {
     });
   }
 
-  private triggerLoadTest(stateMachineArn: string, executeAfter: Construct[]) {
-    new Trigger(this, "Trigger", {
+  private triggerLoadTest(
+    scope: Construct,
+    stateMachineArn: string,
+    executeAfter: Construct[],
+  ) {
+    new Trigger(scope, "Trigger", {
       executeOnHandlerChange: false,
-      handler: new NodejsFunction(this, "k6-executor", {
-        entry: "./functions/workflow/triggerSfn.ts",
+      handler: new NodejsFunction(scope, "k6-executor", {
+        entry: path.resolve(__dirname, "./functions/workflow/triggerSfn.js"),
         environment: {
           STATE_MACHINE_ARN: stateMachineArn,
         },

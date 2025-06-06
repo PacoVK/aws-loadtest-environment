@@ -1,1 +1,1 @@
-export * from "./K6LoadTest";
+export { K6LoadTest } from "./K6LoadTest";

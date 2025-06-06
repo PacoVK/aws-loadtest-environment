@@ -2,8 +2,9 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg)](https://www.typescriptlang.org/)
+[![npm](https://img.shields.io/badge/npm+-orange.svg)](https://k6.io/)
 [![AWS CDK](https://img.shields.io/badge/AWS%20CDK-2.194+-orange.svg)](https://aws.amazon.com/cdk/)
-[![K6](https://img.shields.io/badge/K6-0.57+-purple.svg)](https://k6.io/)
+[![K6](https://img.shields.io/badge/K6-0.57+-purple.svg)](https://www.npmjs.com/package/@pacovk/k6-executor-cluster)
 
 A comprehensive AWS CDK construct library for deploying and running distributed K6 load tests on AWS infrastructure. This solution provides automated infrastructure provisioning, distributed test execution, real-time monitoring, and comprehensive observability for performance testing at scale.
 
@@ -38,48 +39,39 @@ The solution consists of several key components:
 
 - AWS CLI configured with appropriate permissions
 - Node.js 18+ and npm/yarn
-- AWS CDK CLI installed (`npm install -g aws-cdk`)
-- Docker (for building custom images)
+- Docker
 
 ### Installation
 
-1. **Clone the repository**:
+1. **Add dependency**:
 
    ```bash
-   git clone git@github.com:PacoVK/aws-loadtest-environment.git
-   cd aws-loadtest-environment
+   npm install @pacovk/k6-executor-cluster
    ```
-
-2. **Install dependencies**:
 
    ```bash
-   yarn install
+   yarn install @pacovk/k6-executor-cluster
    ```
 
-3. **Bootstrap CDK** (first time only):
+2. **Configure your load test**
 
-   ```bash
-   yarn bootstrap
-   ```
+(see [example](./example/myExampleApp.ts))
 
-4. **Configure your load test** :
-
-   ```typescript
-   // Edit bin/loadTest.ts
-   new K6LoadTest(app, "K6LoadTest", {
-     loadTestConfig: {
-       serviceName: "my-app",
-       // ... other config
-     },
-     infrastructureConfig: {
-       // ... infrastructure config
-     },
-   });
-   ```
+```typescript
+new K6LoadTest(app, "K6LoadTest", {
+  loadTestConfig: {
+    serviceName: "my-app",
+    // ... other config
+  },
+  infrastructureConfig: {
+    // ... infrastructure config
+  },
+});
+```
 
 5. **Deploy the stack**:
    ```bash
-   yarn loadtest
+   npx cdk deploy <your-loadtest-stack>
    ```
 
 ## ⚙️ Configuration
@@ -222,12 +214,6 @@ The load test execution follows this workflow:
 
 - Use ARM-based instances for performance and cost efficiency
 - Set realistic timeouts to prevent runaway executions
-
-### Test Organization
-
-- Structure your K6 tests in a dedicated repository
-- Use environment variables for test configuration
-- Implement proper error handling in your test scripts
 
 ## 📝 Scripts
 
