@@ -1,6 +1,6 @@
 {
   "name": "@pacovk/k6-executor-cluster",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "AWS CDK construct library for deploying and running distributed K6 load tests on AWS infrastructure",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
