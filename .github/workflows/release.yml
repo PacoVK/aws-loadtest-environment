@@ -37,11 +37,14 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-      - name: Update version
-        run: npm version ${{ github.event.inputs.version }} -m "Release v${{ github.event.inputs.version }}"
+      - name: Update package.json version
+        run: |
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+          git add package.json
+          git commit -m "Release v${{ github.event.inputs.version }}"
 
       - name: Push changes
-        run: git push --follow-tags
+        run: git push
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -51,3 +54,4 @@ jobs:
           draft: false
           prerelease: false
           generate_release_notes: true
+          make_latest: true
