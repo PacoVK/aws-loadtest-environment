@@ -2,9 +2,9 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg)](https://www.typescriptlang.org/)
-[![npm](https://img.shields.io/badge/npm+-orange.svg)](https://k6.io/)
+[![npm](https://img.shields.io/badge/Registry-npm-orange.svg)](https://www.npmjs.com/package/@pacovk/k6-executor-cluster)
 [![AWS CDK](https://img.shields.io/badge/AWS%20CDK-2.194+-orange.svg)](https://aws.amazon.com/cdk/)
-[![K6](https://img.shields.io/badge/K6-0.57+-purple.svg)](https://www.npmjs.com/package/@pacovk/k6-executor-cluster)
+[![K6](https://img.shields.io/badge/K6-0.57+-purple.svg)](https://k6.io)
 
 A comprehensive AWS CDK construct library for deploying and running distributed K6 load tests on AWS infrastructure. This solution provides automated infrastructure provisioning, distributed test execution, real-time monitoring, and comprehensive observability for performance testing at scale.
 
