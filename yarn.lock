@@ -15,10 +15,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-awscli-v1@npm:2.2.237":
-  version: 2.2.237
-  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.237"
-  checksum: 10c0/38ebf1396f7c2a7b56b6459590b97d3c5920a4ac016852c1c370f600e16bd48f19f44f3b0d183b11ce4a6eb326940e284cd07a17f7f8bf50cf898f1c9c290b1f
+"@aws-cdk/asset-awscli-v1@npm:2.2.240":
+  version: 2.2.240
+  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.240"
+  checksum: 10c0/0e9edcfb264353531230049a8f8c0107d17b89a6e1e5118c2187e2ff73c14166cf602ca546cd88f67c72c2513898c95230753e4f3c7d7abc616eb621d928a45c
   languageName: node
   linkType: hard
 
@@ -2944,10 +2944,10 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.194.0":
-  version: 2.201.0
-  resolution: "aws-cdk-lib@npm:2.201.0"
+  version: 2.202.0
+  resolution: "aws-cdk-lib@npm:2.202.0"
   dependencies:
-    "@aws-cdk/asset-awscli-v1": "npm:2.2.237"
+    "@aws-cdk/asset-awscli-v1": "npm:2.2.240"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
     "@aws-cdk/cloud-assembly-schema": "npm:^44.2.0"
     "@balena/dockerignore": "npm:^1.0.2"
@@ -2963,7 +2963,7 @@ __metadata:
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/c5dff44d3623afd0eadd07be96d6d61ffbddde4f61996adc9e75b318f61dd510910bd784c46b8299db390c4f89c0ae80a9bb50acc493daf0288258a0d3ec5478
+  checksum: 10c0/a9f5929d41164cea06e02f2597e0ebd54317f580c777abaa99defdc690e35d768d35286d73d2ad37f711a815a078e80ba25fd96ba05fac8ec4e691930d1a6b9e
   languageName: node
   linkType: hard
 
