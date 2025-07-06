@@ -15,10 +15,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-awscli-v1@npm:2.2.240":
-  version: 2.2.240
-  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.240"
-  checksum: 10c0/0e9edcfb264353531230049a8f8c0107d17b89a6e1e5118c2187e2ff73c14166cf602ca546cd88f67c72c2513898c95230753e4f3c7d7abc616eb621d928a45c
+"@aws-cdk/asset-awscli-v1@npm:2.2.242":
+  version: 2.2.242
+  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.242"
+  checksum: 10c0/bf0d1694de559accb4dc28257eccbd959d37d5d2c5572aa77bc3a01612796b6fcf616e6b5fbb52f0212f61ee36e7eba333ba3a387142789eaf6b3a98e819c814
   languageName: node
   linkType: hard
 
@@ -39,13 +39,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-schema@npm:^44.2.0":
-  version: 44.5.0
-  resolution: "@aws-cdk/cloud-assembly-schema@npm:44.5.0"
+"@aws-cdk/cloud-assembly-schema@npm:^45.0.0":
+  version: 45.1.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:45.1.0"
   dependencies:
     jsonschema: "npm:~1.4.1"
     semver: "npm:^7.7.2"
-  checksum: 10c0/06e5aeed2c1109ce14c128b224cb10052757a1cee56e3d11d9a473bb46eca1df722077a56fa195708624ee19c48efc1b45ae14ab4ee158c53ec7f91c2419352a
+  checksum: 10c0/d05a87d9efcd4a9f02196d2df3309e6299ef2a584b2e82c512cf1aed052d4f66ea5a7461c87ba921fb47eec4ec12888664dfb902ea63e48e156ccd68f0fe244b
   languageName: node
   linkType: hard
 
@@ -2954,12 +2954,12 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.194.0":
-  version: 2.202.0
-  resolution: "aws-cdk-lib@npm:2.202.0"
+  version: 2.204.0
+  resolution: "aws-cdk-lib@npm:2.204.0"
   dependencies:
-    "@aws-cdk/asset-awscli-v1": "npm:2.2.240"
+    "@aws-cdk/asset-awscli-v1": "npm:2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
-    "@aws-cdk/cloud-assembly-schema": "npm:^44.2.0"
+    "@aws-cdk/cloud-assembly-schema": "npm:^45.0.0"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.3.0"
@@ -2973,7 +2973,7 @@ __metadata:
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/a9f5929d41164cea06e02f2597e0ebd54317f580c777abaa99defdc690e35d768d35286d73d2ad37f711a815a078e80ba25fd96ba05fac8ec4e691930d1a6b9e
+  checksum: 10c0/91d5677c9ef76cf71ced2a37aa5e5dbc554cab1ff3f64a23e3716eb6df8bf67cf1b588c94ad9119e1b62e71a4219518e9568b588bcbc7bd8f0ccc1f94f821fad
   languageName: node
   linkType: hard
 
