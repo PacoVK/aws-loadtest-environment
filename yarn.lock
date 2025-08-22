@@ -39,13 +39,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-schema@npm:^48.2.0":
-  version: 48.3.0
-  resolution: "@aws-cdk/cloud-assembly-schema@npm:48.3.0"
+"@aws-cdk/cloud-assembly-schema@npm:^48.3.0":
+  version: 48.5.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:48.5.0"
   dependencies:
     jsonschema: "npm:~1.4.1"
     semver: "npm:^7.7.2"
-  checksum: 10c0/a41c1814afe45c6a820885234b81ba00c8c6c8542d204ffde97496ed808fc82217b60661cb6a6710360693a725132429df8ea9ef7d6353438694abe64c7adc55
+  checksum: 10c0/4f40715782f1a25a75ea421a8ae2e0cb58712e4318b34e2095c697d50c90fa2566cff29468714d10a6cc1d45eb744e246bd3410cab19afd3b2011177afd175cc
   languageName: node
   linkType: hard
 
@@ -2975,15 +2975,15 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.194.0":
-  version: 2.211.0
-  resolution: "aws-cdk-lib@npm:2.211.0"
+  version: 2.212.0
+  resolution: "aws-cdk-lib@npm:2.212.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
-    "@aws-cdk/cloud-assembly-schema": "npm:^48.2.0"
+    "@aws-cdk/cloud-assembly-schema": "npm:^48.3.0"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
-    fs-extra: "npm:^11.3.0"
+    fs-extra: "npm:^11.3.1"
     ignore: "npm:^5.3.2"
     jsonschema: "npm:^1.5.0"
     mime-types: "npm:^2.1.35"
@@ -2994,7 +2994,7 @@ __metadata:
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/9432df5c95dc3a317c5159fbbad42cd802637e285f192b7f73a5d58596cbe4946e9fbeb0d1eb7216ff562adadf63aa34e525188b447aa6c816fa05c37ee57001
+  checksum: 10c0/d654a50c6886261def54f32cbf63cba898d68035755620f36f7fb726081312e81a207302bd943738e68fc5a8ed95956262cb94cc9d8485cff62a6ee6f672162c
   languageName: node
   linkType: hard
 
@@ -3934,14 +3934,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.3.0":
-  version: 11.3.0
-  resolution: "fs-extra@npm:11.3.0"
+"fs-extra@npm:^11.3.1":
+  version: 11.3.1
+  resolution: "fs-extra@npm:11.3.1"
   dependencies:
     graceful-fs: "npm:^4.2.0"
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
-  checksum: 10c0/5f95e996186ff45463059feb115a22fb048bdaf7e487ecee8a8646c78ed8fdca63630e3077d4c16ce677051f5e60d3355a06f3cd61f3ca43f48cc58822a44d0a
+  checksum: 10c0/61e5b7285b1ca72c68dfe1058b2514294a922683afac2a80aa90540f9bd85370763d675e3b408ef500077d355956fece3bd24b546790e261c3d3015967e2b2d9
   languageName: node
   linkType: hard
 
