@@ -3134,8 +3134,8 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.194.0":
-  version: 2.214.0
-  resolution: "aws-cdk-lib@npm:2.214.0"
+  version: 2.215.0
+  resolution: "aws-cdk-lib@npm:2.215.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.242"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
@@ -3153,7 +3153,7 @@ __metadata:
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/5f0c14a8a5cab4cdf303db1d280e74fea3deae74f7ab9126da0efbe9b11700e8dff02c7314787df2f8dd517165fc287fecd2350c510913d5ff6ac94acb8753a5
+  checksum: 10c0/61e478b70c62c2ddac9a28659041d750cd883f9f4c6d7da396f91bc80ff8aefb2d80ca66f2f901aa2aa613f0980e5a5e8d2d1a23e12ceb3d06506ab5b0d992f3
   languageName: node
   linkType: hard
 
