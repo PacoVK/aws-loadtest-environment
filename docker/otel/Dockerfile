@@ -1,4 +1,4 @@
-ARG COLLECTOR_VERSION=0.135.0
+ARG COLLECTOR_VERSION=0.136.0
 FROM otel/opentelemetry-collector-contrib:${COLLECTOR_VERSION}
 
 COPY ./config/ /etc/config
