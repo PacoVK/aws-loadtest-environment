@@ -43,7 +43,7 @@
     "aws-cdk": "^2.194.0",
     "aws-cdk-lib": "^2.194.0",
     "constructs": "^10.0.0",
-    "esbuild": "^0.25.5",
+    "esbuild": "^0.27.0",
     "eslint": "^8.40.0",
     "jest": "^30.0.0",
     "prettier": "^3.5.3",
