@@ -3019,8 +3019,8 @@ __metadata:
   linkType: hard
 
 "aws-cdk@npm:^2.194.0":
-  version: 2.1033.0
-  resolution: "aws-cdk@npm:2.1033.0"
+  version: 2.1034.0
+  resolution: "aws-cdk@npm:2.1034.0"
   dependencies:
     fsevents: "npm:2.3.2"
   dependenciesMeta:
@@ -3028,7 +3028,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 10c0/5bdf9175b216deeba6efe1929333a0cb758320cc2ed3427891dae82ddf590b7c92f32e2a002e23a4ff457be4d4ca3eeda21859dcb5cf140fe2774da1fef31899
+  checksum: 10c0/f18b84614b29e95f45f0932cdcc0b6d3ba388d0419b1682aafa4d7feb5709619219af4b37eb31317733af53cc7884f0fb0130b6c4a7ae2777f09eecfd387681d
   languageName: node
   linkType: hard
 
