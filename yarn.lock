@@ -1893,7 +1893,7 @@ __metadata:
     "@aws-cdk/aws-ec2-alpha": "npm:^2.200.1-alpha.0"
     "@aws-sdk/client-sfn": "npm:^3.825.0"
     "@types/jest": "npm:^30.0.0"
-    "@types/node": "npm:^22.0.0"
+    "@types/node": "npm:^24.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.0.0"
     "@typescript-eslint/parser": "npm:^8.0.0"
     aws-cdk: "npm:^2.194.0"
@@ -2549,12 +2549,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.0.0":
-  version: 22.19.8
-  resolution: "@types/node@npm:22.19.8"
+"@types/node@npm:^24.0.0":
+  version: 24.10.11
+  resolution: "@types/node@npm:24.10.11"
   dependencies:
-    undici-types: "npm:~6.21.0"
-  checksum: 10c0/35c3c0916a983dd33ddd8710d868a2678192c2ff3c6677e1d348872b78b9911c929279579c78efac1c9e61958b3f61cc5d3e725aaa41462f16f531d381ff15e6
+    undici-types: "npm:~7.16.0"
+  checksum: 10c0/2578baa9443d62b0f13444b7965790912eca6d25c205e594cfa96689fa9bc6a676d2d4d7024a95a92e42e4be52133e5608ece2ef86edb12ee110c8b52f603a35
   languageName: node
   linkType: hard
 
@@ -6239,13 +6239,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/ad09fdf7a756814dce65bc60c1657b40d44451346858eea230e10f2e95a289d9183b6e32e5c11e95acc0ccc214b4f36289dcad4bf1886b0adb84d711d336a430
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~6.21.0":
-  version: 6.21.0
-  resolution: "undici-types@npm:6.21.0"
-  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
   languageName: node
   linkType: hard
 
