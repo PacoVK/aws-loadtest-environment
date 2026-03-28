@@ -2992,11 +2992,11 @@ __metadata:
   linkType: hard
 
 "aws-cdk@npm:^2.194.0":
-  version: 2.1112.0
-  resolution: "aws-cdk@npm:2.1112.0"
+  version: 2.1114.1
+  resolution: "aws-cdk@npm:2.1114.1"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/82eb0c205f6043063b0290625839a20c2683b1b645da02427834669461e46a5aa6517d6b63da3cf984ba032ccc02c4e06b189d7ec3bb3f34e116b433cf74c0cb
+  checksum: 10c0/267b4579ab4122faa488cfde37b9848f19039d4e9d4e36b22d41c7c36bc8083d430dc503324fb54599cb81e49c6d494ee523a3cde504420cf362e598e0bc744f
   languageName: node
   linkType: hard
 
