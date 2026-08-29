@@ -50,8 +50,8 @@ __metadata:
   linkType: hard
 
 "@aws-sdk/client-sfn@npm:^3.825.0":
-  version: 3.1116.0
-  resolution: "@aws-sdk/client-sfn@npm:3.1116.0"
+  version: 3.1121.0
+  resolution: "@aws-sdk/client-sfn@npm:3.1121.0"
   dependencies:
     "@aws-sdk/core": "npm:^3.977.9"
     "@aws-sdk/credential-provider-node": "npm:^3.972.81"
@@ -61,7 +61,7 @@ __metadata:
     "@smithy/node-http-handler": "npm:^4.11.3"
     "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/27644189601471d604c29542e116839a4a379a208672133cd31d0fec237b648b68a56c044dac99b2722fc415cf7eefa9ffa5e30d45ecb73840edad3dfd57456a
+  checksum: 10c0/ab9ee0b3a4c974e1a5e4ec62da1ac87a6566963846eba132092ec09700fc44ad391eeca8b5e512760f1cd3ab004ecd0967b2b727cb16705b646c29310de3f1a3
   languageName: node
   linkType: hard
 
